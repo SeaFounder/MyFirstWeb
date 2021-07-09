@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+section{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-image: url(mountain.jpg);
+    opacity: 0.96;
+    background-size: cover;
+    background-position: center ;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 150px;
+    cursor: pointer;
+}
+.container{
+    box-shadow: 0 0 8px 0;
+    border-radius: 5px ;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translateY(-50%);
+    background-color: #005580;
+    opacity: 0.956;
+    
+}
+.container form{
+    width: 100%;
+    text-align: center;
+    padding: 50px 30px;
+}
+form header{
+    color: #FFF;
+    margin-bottom: 50px;
+    padding: 8px 0;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+header i{
+    font-size: 50px;
+    position: absolute;
+    right: 10%;
+    top: 24%;   
+}
+
+form label{
+    font-size: 17px;
+    color: #FFF;
+}
+form .fb{
+    position: relative;
+} 
+.fb i{
+    color: #00689c;
+    position: absolute;
+    font-size: 25px;
+    top: 48%;
+    right: 20px;
+}
+form input{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+    padding: 0 5px;
+    padding-right: 45px;
+    font-size: 15px;
+
+}
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid #1a1a1a;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 100%;
+    margin: 4px 0;
+
+}
+form button{
+    margin-top: 7px;
+    color: #FFF;
+    border: none;
+    background: #31baff; 
+    padding: 7px 0;
+    width: 30%;
+    font-size: 15px ;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px ;
+}
+form input,
+form textarea:focus{
+    border: 1px solid #63cbff;
+    color: #63cbff;
+    transition: all 0.3 ease ;
+}
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+    color:  #63cbff ;
+    transition: all 0.3s ;
+}
+form input:focus + i{
+    color:  #63cbff ;
+    transition: all 0.3s ;
+}
+@media (max-width: 861px){
+    .container{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        background: #00008B;
+        opacity: 0.875;
+         
+    }
+    header i{
+        font-size: 50px;
+        position: absolute;
+        right: 10%;
+        top: 23%;
+        
+    }
+    form input,
+    form textarea:focus{
+        border: 1px solid #00aaff;
+        color: #4ac3ff;
+        transition: all 0.3 ease ;
+}
+    form input:focus::placeholder,
+    form textarea:focus::placeholder{
+        color:  #4ac3ff ;
+        transition: all 0.3s ;
+}
+    form input:focus + i{
+        color:  #4ac3ff ;
+        transition: all 0.3s 
+    }
+    
+}
